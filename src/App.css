@@ -1,0 +1,37 @@
+
+.countryCode{
+  padding:6px;
+  
+  color:white;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 50%;
+  background-color: #1976d2;
+}
+.countryName{
+  font-weight: 700;
+  margin-left: 15px;
+}
+.spanClass{
+  margin-right: 8px;
+}
+.spanClass strong{
+  color:black;
+}
+.mainCategoryName{
+
+  cursor: pointer;
+  color:black;
+  font-weight: 600;
+  font-size: 20px;
+}
+.productType{
+  text-decoration: none;
+  color:black;
+}
+.productType:hover{
+  color:#1976d2;
+}
+.boxShadow{
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}

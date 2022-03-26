@@ -1,0 +1,83 @@
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#imgStyle img{
+    height: 350px;
+    width: 650px;
+    object-fit: "contain";
+    padding-top: 2em;
+}
+#imgStyle button{
+    padding-left: 20px;
+    height: 40px;
+    padding-right: 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid white;
+    margin-top: 2em;
+}
+#imgStyle{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    margin-bottom: 7em;
+    height: 410px;
+}
+#imgStyle .detailDiv{
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    color: white;
+    z-index: 1000;
+
+}
+.detailDiv p{
+    line-height: 0.5;
+}
+
+/* media query for 900px screen */
+@media only screen and (max-width : 900px) {
+    .floating { 
+        animation-name: smallscreen;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    #imgStyle img{
+        height: 300px;
+        width: 500px;
+    }
+    #imgStyle{
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        height: 380px;
+    }
+}
+@media only screen and (max-width : 550px) {
+    #imgStyle img{
+        height: 200px;
+        width: 300px;
+    }
+    #imgStyle{
+        height: 400px;
+        margin-bottom: 1em;
+    }
+}
+@keyframes floating {
+    0% { transform: translate(0, -10px) rotate(-30deg); }
+    50%  { transform: translate(0, 15px) rotate(-30deg); }
+    100%   { transform: translate(0, -10px) rotate(-30deg); }   
+}
+@keyframes smallscreen {
+    0% { transform: translate(0, -10px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -10px); }   
+}

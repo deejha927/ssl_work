@@ -1,0 +1,16 @@
+.testclass{
+    text-decoration: none;
+    color:white;
+}
+.userBtn{
+    background-color: transparent;
+    border:none;
+    color:white;
+}
+.userBtn p{
+    line-height: 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
